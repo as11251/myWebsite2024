@@ -1,47 +1,148 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Czech Rupublic!</title> <style> body { margin: 0; font-family: Arial, sans-serif; } /* Top bar styling */ .top-bar { position: fixed; top: 0; left: 0; width: 100%; background-color: #333; color: white; padding: 10px 20px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); z-index: 1000; } .top-bar h1 { margin: 0; font-size: 1.5rem; } /* Content styling */ .content { padding: 70px 20px; /* Add padding to prevent overlap with the fixed bar */ } </style> </head> <body> <div class="top-bar"> <h1>Fixed Top Bar</h1> </div> <div class="content"> <p> </div> </body> </html>
+<!DOCTYPE html>
+<html lang="en">
 
-<html>
 <head>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Czech Republic!</title>
   <style>
-     body{
-     
-         text-align: center;
-        background-image: linear-gradient(rgb(119, 185, 247), rgb(119, 185, 247)); 
-         min-width: 100%;
-         min-height: 100%;
-      }64, 162, 255
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-image: linear-gradient(rgb(119, 185, 247), rgb(64, 162, 255));
+      min-height: 100vh;
+    }
+
+    /* Navbar styling */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+    }
+
+    .navbar a {
+      display: inline-block;
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .navbar a:hover {
+      background-color: #575757;
+    }
+
+    .navbar a.active {
+      background-color: #04AA6D;
+    }
+
+    /* Content styling */
+    .content {
+      padding: 10px 20px; /* Prevent overlap with navbar */
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 20px 0;
+    }
+
+    h1, h2 {
+      color: #333;
+    }
+
+    p {
+      text-align: justify;
+      margin: 0 auto;
+      max-width: 800px;
+      line-height: 1.8;
+    }
+
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Responsive styling */
+    @media (max-width: 768px) {
+      .navbar a {
+        display: block;
+        text-align: left;
+        padding: 10px;
+      }
+    }
   </style>
 </head>
 
 <body>
-<h1>Czech Rupublic</h1>
-<p>
-The Czech Republic's rich history spans over a thousand years, filled with outstanding achievements and struggles that have shaped the nation into what it is today. From the medieval era to the country's role in World War II to the Velvet Revolution, it has maintained a rich intellectual culture.
-</p>
 
-<img src=https://internationalliving.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Fwv75stsetqy3%2F5bM6VkIpGI7SOjLNF2hQUG%2F771657f64d42a6d3635abab0070dcf8d%2FCzech_Republic.jpg%3Fq%3D60%26fit%3Dfill%26fm%3Dwebp&w=3840&q=60 width=500px>
-<br>
-<h1>
-Sport
-</h1>
-<p>
-From 1999 to 2001, the Czech Republic won the World Championship three times in a row. Only Canada and USSR were able to achieve the “three-peat” before. Thw Czechs went on to win the gold medals in 2005 and 2010 while the U20 team won the World Championship back-to-back in 2000 and 2001.<br>It is one of the most successful national ice hockey teams in history and a member of the so-called "Big Six", the unofficial group of the six strongest men's ice hockey nations.
-</p>
-<img src="https://lh5.googleusercontent.com/proxy/vwTz6IiBQda39o4f0kXawWLD3qvRqS1d4hYdJVg1yB7uV8wIxtp6bG9O6wn-p0-OBJB2JFJJmOws055Wbcd_P2xxFW-u4I0pvIclKWauD6Tfffy3vVbIpseRRD9-W1TceptYeOR_eAg" <hight 200px></hight>>
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="#home" class="active">Home</a>
+    <a href="#sport">Sport</a>
+    <a href="#history">History</a>
+    <a href="#culture">Culture</a>
+  </div>
 
-<h2>
-History
-</h2>
-<p>
-Around the 4th century B.C. the present territory of the Czech Republic was populated by Celts. They were the first known ethnic group to arrive in the area, according to historical evidence. The Celtic Boii tribe gave the country its Latin name - Boiohaemum (Bohemia). They were replaced by the German tribes before the beginning of our era. The German tribes were present in the territory of Czech Lands till the beginning of 6th century when they either left or merged with Slav tribes.
+  <!-- Content -->
+  <div id="home" class="content">
+  <br>  <br>  <br>
+    <h1>Czech Republic</h1>
+    <p>
+      The Czech Republic's rich history spans over a thousand years, filled with outstanding achievements
+      and struggles that have shaped the nation into what it is today. From the medieval era to the country's
+      role in World War II to the Velvet Revolution, it has maintained a rich intellectual culture.
+    </p>
+    <img src="https://internationalliving.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Fwv75stsetqy3%2F5bM6VkIpGI7SOjLNF2hQUG%2F771657f64d42a6d3635abab0070dcf8d%2FCzech_Republic.jpg%3Fq%3D60%26fit%3Dfill%26fm%3Dwebp&w=3840&q=60" alt="Czech Republic Landscape">
+  </div>
 
-At the end of the 5th and the beginning of 6th century Slav tribes settled in the territory of the Czech Lands during the period known as the Migration of Peoples. The first half of the 7thcentury marks the first successful attempt to unite these tribes under a Frankish duke Samo. The so-called "Kingdom of Samo" (623 - 659) resisted the pressure of the powerful Avar empire centered in the current territory of Hungarian lowlands, and defended its territory against the forces of the Franks from the west, with partial success.
+  <div id="sport" class="content">
+    <h2>Sport</h2>
+    <p>
+      From 1999 to 2001, the Czech Republic won the World Championship three times in a row. Only Canada and the USSR
+      were able to achieve the “three-peat” before. The Czechs went on to win gold medals in 2005 and 2010, while the U20
+      team won the World Championship back-to-back in 2000 and 2001. It is one of the most successful national ice hockey
+      teams in history and a member of the so-called "Big Six," the unofficial group of the six strongest men's ice hockey nations.
+    </p>
+    <img src="https://lh5.googleusercontent.com/proxy/vwTz6IiBQda39o4f0kXawWLD3qvRqS1d4hYdJVg1yB7uV8wIxtp6bG9O6wn-p0-OBJB2JFJJmOws055Wbcd_P2xxFW-u4I0pvIclKWauD6Tfffy3vVbIpseRRD9-W1TceptYeOR_eAg" alt="Czech Republic Ice Hockey Team">
+  </div>
 
-</p>
-<h2>Calture</h2>
-<p>On easter families prepare painted eggs and feasts ready for Monday as the holiday comes to a close. On Easter Monday the Czech people take part in 'pomlázka', a tradition in which boys and men go from house to house gently whipping girls/women with traditional 'pomlázka' whips in an effort to chase away illness and negativity.</p>
+  <div id="history" class="content">
+    <h2>History</h2>
+    <p>
+      Around the 4th century B.C., the present territory of the Czech Republic was populated by Celts. They were the
+      first known ethnic group to arrive in the area, according to historical evidence. The Celtic Boii tribe gave the
+      country its Latin name - Boiohaemum (Bohemia). They were replaced by the German tribes before the beginning of
+      our era. The German tribes were present in the territory of Czech Lands till the beginning of the 6th century
+      when they either left or merged with Slav tribes.
+    </p>
+    <p>
+      At the end of the 5th and the beginning of the 6th century, Slav tribes settled in the territory of the Czech
+      Lands during the period known as the Migration of Peoples. The first half of the 7th century marks the first
+      successful attempt to unite these tribes under a Frankish duke Samo. The so-called "Kingdom of Samo" (623 - 659)
+      resisted the pressure of the powerful Avar empire centered in the current territory of Hungarian lowlands and
+      defended its territory against the forces of the Franks from the west, with partial success.
+    </p>
+    <img src="https://static.officeholidays.com/images/935x475c/czech_republic_01.jpg" alt="Czech Republic History" width="500">
+  </div>
 
+  <div id="culture" class="content">
+    <h2>Culture</h2>
+    <p>
+      On Easter, families prepare painted eggs and feasts ready for Monday as the holiday comes to a close. On Easter
+      Monday, the Czech people take part in 'pomlázka,' a tradition in which boys and men go from house to house gently
+      whipping girls/women with traditional 'pomlázka' whips in an effort to chase away illness and negativity.
+    </p>
+    <img src="https://www.sustaineurope.com/images/voja-1-velikonoce_velikonocni%20praskacka.jpg?crc=4070190210" alt="Czech Easter Tradition">
+  </div>
 
 </body>
 
