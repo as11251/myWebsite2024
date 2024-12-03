@@ -1,10 +1,8 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Czech Republic!</title>
+  <title>Czech Republic</title>
   <style>
     body {
       margin: 0;
@@ -12,6 +10,7 @@
       text-align: center;
       background-image: linear-gradient(rgb(119, 185, 247), rgb(64, 162, 255));
       min-height: 100vh;
+      padding-top: 50px; /* Account for navbar */
     }
 
     /* Navbar styling */
@@ -24,11 +23,13 @@
       overflow: hidden;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
       z-index: 1000;
+      text-align: center;
     }
 
     .navbar a {
       display: inline-block;
       color: white;
+      text-align: center;
       padding: 14px 20px;
       text-decoration: none;
       font-size: 1rem;
@@ -42,15 +43,15 @@
       background-color: #04AA6D;
     }
 
-    /* Content styling */
+    /* Content area */
     .content {
-      padding: 10px 20px; /* Prevent overlap with navbar */
-      max-width: 1200px;
+      padding: 40px 20px; /* Space for navbar */
+      max-width: 800px;
       margin: 0 auto;
     }
 
     img {
-      max-width: 100%;
+      max-width: 90%;
       height: auto;
       margin: 20px 0;
     }
@@ -62,26 +63,15 @@
     p {
       text-align: justify;
       margin: 0 auto;
-      max-width: 800px;
-      line-height: 1.8;
+      line-height: 1.6;
     }
 
     /* Smooth scrolling */
     html {
       scroll-behavior: smooth;
     }
-
-    /* Responsive styling */
-    @media (max-width: 768px) {
-      .navbar a {
-        display: block;
-        text-align: left;
-        padding: 10px;
-      }
-    }
   </style>
 </head>
-
 <body>
 
   <!-- Navbar -->
@@ -90,31 +80,33 @@
     <a href="#sport">Sport</a>
     <a href="#history">History</a>
     <a href="#culture">Culture</a>
+    <a href="#orloj">Orloj</a> <!-- Fixed 'href' typo -->
   </div>
 
-  <!-- Content -->
+  <!-- Home section -->
   <div id="home" class="content">
-  <br>  <br>  <br>
     <h1>Czech Republic</h1>
     <p>
-      The Czech Republic's rich history spans over a thousand years, filled with outstanding achievements
-      and struggles that have shaped the nation into what it is today. From the medieval era to the country's
-      role in World War II to the Velvet Revolution, it has maintained a rich intellectual culture.
+      The Czech Republic's rich history spans over a thousand years, filled with outstanding achievements and struggles 
+      that have shaped the nation into what it is today. From the medieval era to the country's role in World War II 
+      to the Velvet Revolution, it has maintained a rich intellectual culture.
     </p>
     <img src="https://internationalliving.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Fwv75stsetqy3%2F5bM6VkIpGI7SOjLNF2hQUG%2F771657f64d42a6d3635abab0070dcf8d%2FCzech_Republic.jpg%3Fq%3D60%26fit%3Dfill%26fm%3Dwebp&w=3840&q=60" alt="Czech Republic Landscape">
   </div>
 
+  <!-- Sport section -->
   <div id="sport" class="content">
     <h2>Sport</h2>
     <p>
-      From 1999 to 2001, the Czech Republic won the World Championship three times in a row. Only Canada and the USSR
-      were able to achieve the “three-peat” before. The Czechs went on to win gold medals in 2005 and 2010, while the U20
-      team won the World Championship back-to-back in 2000 and 2001. It is one of the most successful national ice hockey
+      From 1999 to 2001, the Czech Republic won the World Championship three times in a row. Only Canada and the USSR 
+      were able to achieve the “three-peat” before. The Czechs went on to win gold medals in 2005 and 2010, while the U20 
+      team won the World Championship back-to-back in 2000 and 2001. It is one of the most successful national ice hockey 
       teams in history and a member of the so-called "Big Six," the unofficial group of the six strongest men's ice hockey nations.
     </p>
     <img src="https://lh5.googleusercontent.com/proxy/vwTz6IiBQda39o4f0kXawWLD3qvRqS1d4hYdJVg1yB7uV8wIxtp6bG9O6wn-p0-OBJB2JFJJmOws055Wbcd_P2xxFW-u4I0pvIclKWauD6Tfffy3vVbIpseRRD9-W1TceptYeOR_eAg" alt="Czech Republic Ice Hockey Team">
   </div>
 
+  <!-- History section -->
   <div id="history" class="content">
     <h2>History</h2>
     <p>
@@ -131,9 +123,10 @@
       resisted the pressure of the powerful Avar empire centered in the current territory of Hungarian lowlands and
       defended its territory against the forces of the Franks from the west, with partial success.
     </p>
-    <img src="https://static.officeholidays.com/images/935x475c/czech_republic_01.jpg" alt="Czech Republic History" width="500">
+    <img src="https://static.officeholidays.com/images/935x475c/czech_republic_01.jpg" alt="Czech Republic History">
   </div>
 
+  <!-- Culture section -->
   <div id="culture" class="content">
     <h2>Culture</h2>
     <p>
@@ -144,6 +137,21 @@
     <img src="https://www.sustaineurope.com/images/voja-1-velikonoce_velikonocni%20praskacka.jpg?crc=4070190210" alt="Czech Easter Tradition">
   </div>
 
-</body>
+  <!-- Orloj section -->
+  <div id="orloj" class="content">
+    <h2>Orloj</h2>
+    <p>
+      The Orloj is mounted on the southern wall of Old Town Hall in the Old Town Square. The clock mechanism has three 
+      main components: the astronomical dial, representing the position of the Sun and Moon in the sky and displaying 
+      various astronomical details; statues of various Catholic saints stand on either side of the clock; "The Walk of 
+      the Apostles", an hourly show of moving Apostle figures and other sculptures, notably a figure of a skeleton 
+      that represents Death, striking the time; and a calendar dial with medallions representing the months. 
+      According to local legend, the city will suffer if the clock is neglected and its good operation is placed in jeopardy; 
+      a ghost, mounted on the clock, was supposed to nod its head in confirmation. According to the legend, the only hope 
+      was represented by a boy born on New Year's night.
+    </p>
+    <img src="https://cdn-imgix.headout.com/media/images/203027ede3609da428d3f0e26c552948-15767-prague-prague-skip-the-line-tickets-to-the-astronomical-clock-tower-13.jpg?auto=format&w=900&h=562.5&q=90&fit=crop&ar=16%3A10"
+  </div>
 
+</body>
 </html>
