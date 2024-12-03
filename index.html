@@ -152,6 +152,75 @@
     </p>
     <img src="https://cdn-imgix.headout.com/media/images/203027ede3609da428d3f0e26c552948-15767-prague-prague-skip-the-line-tickets-to-the-astronomical-clock-tower-13.jpg?auto=format&w=900&h=562.5&q=90&fit=crop&ar=16%3A10"
   </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Back to Top Button</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 2000px; /* Just to create a scrollable page */
+    }
+
+    /* Button styling */
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #04AA6D;
+      color: white;
+      border: none;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 18px;
+      cursor: pointer;
+      display: none; /* Hide initially */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+
+    .back-to-top:hover {
+      background-color: #333;
+    }
+
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Content -->
+  
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTopBtn" onclick="scrollToTop()">↑</button>
+
+  <script>
+    // Get the button
+    let mybutton = document.getElementById("backToTopBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    };
+
+    // Function to scroll to the top of the page
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  </script>
+
+</body>
+</html>
 
 </body>
 </html>
