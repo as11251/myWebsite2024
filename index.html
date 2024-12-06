@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -70,6 +71,27 @@
     html {
       scroll-behavior: smooth;
     }
+
+    /* Button styling */
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #04AA6D;
+      color: white;
+      border: none;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 18px;
+      cursor: pointer;
+      display: none; /* Hide initially */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+
+    .back-to-top:hover {
+      background-color: #333;
+    }
   </style>
 </head>
 <body>
@@ -80,7 +102,8 @@
     <a href="#sport">Sport</a>
     <a href="#history">History</a>
     <a href="#culture">Culture</a>
-    <a href="#orloj">Orloj</a> <!-- Fixed 'href' typo -->
+    <a href="#orloj">Orloj</a>
+    <a href="#traditional-food">Traditional Food</a>
   </div>
 
   <!-- Home section -->
@@ -91,6 +114,7 @@
       that have shaped the nation into what it is today. From the medieval era to the country's role in World War II 
       to the Velvet Revolution, it has maintained a rich intellectual culture.
     </p>
+    <iframe src="https://assets.pinterest.com/ext/embed.html?id=831617887471877434" height="714" width="345" frameborder="0" scrolling="no" ></iframe>
     <img src="https://internationalliving.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Fwv75stsetqy3%2F5bM6VkIpGI7SOjLNF2hQUG%2F771657f64d42a6d3635abab0070dcf8d%2FCzech_Republic.jpg%3Fq%3D60%26fit%3Dfill%26fm%3Dwebp&w=3840&q=60" alt="Czech Republic Landscape">
   </div>
 
@@ -144,83 +168,39 @@
       The Orloj is mounted on the southern wall of Old Town Hall in the Old Town Square. The clock mechanism has three 
       main components: the astronomical dial, representing the position of the Sun and Moon in the sky and displaying 
       various astronomical details; statues of various Catholic saints stand on either side of the clock; "The Walk of 
-      the Apostles", an hourly show of moving Apostle figures and other sculptures, notably a figure of a skeleton 
-      that represents Death, striking the time; and a calendar dial with medallions representing the months. 
-      According to local legend, the city will suffer if the clock is neglected and its good operation is placed in jeopardy; 
-      a ghost, mounted on the clock, was supposed to nod its head in confirmation. According to the legend, the only hope 
-      was represented by a boy born on New Year's night.
+      the Apostles" happens every hour, and moving figures depict biblical characters.
     </p>
-    <img src="https://cdn-imgix.headout.com/media/images/203027ede3609da428d3f0e26c552948-15767-prague-prague-skip-the-line-tickets-to-the-astronomical-clock-tower-13.jpg?auto=format&w=900&h=562.5&q=90&fit=crop&ar=16%3A10"
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Prague_Orloj_2011.jpg" alt="Prague Orloj Clock">
   </div>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Back to Top Button</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      height: 2000px; /* Just to create a scrollable page */
-    }
 
-    /* Button styling */
-    .back-to-top {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #04AA6D;
-      color: white;
-      border: none;
-      padding: 15px;
-      border-radius: 50%;
-      font-size: 18px;
-      cursor: pointer;
-      display: none; /* Hide initially */
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      z-index: 1000;
-    }
-
-    .back-to-top:hover {
-      background-color: #333;
-    }
-
-    /* Smooth scrolling */
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Content -->
-  
+  <!-- Traditional Food section -->
+  <div id="traditional-food" class="content">
+    <h2>Traditional Food</h2>
+    <p>
+      Traditional Czech food is influenced by the country's history and agricultural resources. Meals are hearty and
+      often rich in meat, potatoes, cabbage, and bread. Some of the most popular dishes include 'svíčková' (a creamy 
+      beef sauce with dumplings), 'schnitzel', and 'koláče' (sweet pastries filled with fruit or cheese).
+    </p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Svickova_2011.jpg" alt="Czech Traditional Dish">
+  </div>
 
   <!-- Back to Top Button -->
-  <button class="back-to-top" id="backToTopBtn" onclick="scrollToTop()">↑</button>
+  <button class="back-to-top" id="backToTop">↑</button>
 
   <script>
-    // Get the button
-    let mybutton = document.getElementById("backToTopBtn");
-
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
+    // Show the back-to-top button when scrolling down
+    window.onscroll = function () {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        document.getElementById("backToTop").style.display = "block";
       } else {
-        mybutton.style.display = "none";
+        document.getElementById("backToTop").style.display = "none";
       }
     };
 
-    // Function to scroll to the top of the page
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
+    // Scroll to the top when the button is clicked
+    document.getElementById("backToTop").onclick = function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
   </script>
-
-</body>
-</html>
-
 </body>
 </html>
